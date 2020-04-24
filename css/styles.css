@@ -15,7 +15,7 @@ a {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 * {
@@ -46,43 +46,51 @@ a {
   padding: 40px 40px 60px;
 }
 
-/* .flex {
+.flex {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
 .flex > div {
-  flex: 1;
+	flex: 1;
+}
+
+.flex > div:first-child {
+	margin-right: 20px;
+}
+
+.flex > div:last-child {
+	margin-left: 20px;
 }
 
 .flex-start {
-  align-items: flex-start;
+	align-items: flex-start;
 }
 
 .flex-start ul:first-child {
-  padding: 0;
-  flex: 0.4;
+	padding-left: 0;
+	flex: 0.4;
 }
 
 .flex-start > ul:not(.begin) {
-  padding-left: 0;
-  flex: 0.2;
-} */
+	padding-left: 0;
+	flex: 0.2;
+}
 
-.img {
+img {
   max-width: 100%;
 }
 
 h1 {
-  font-family: 'Raleway', sans-serif11B;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 2.1rem;
   line-height: 2.5rem;
 }
 
 h2 {
-  font-family: 'Raleway', sans-serif11B;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.9rem;
 }
 
@@ -107,11 +115,36 @@ nav ul li a:hover {
   color: var(--BrightBlue);
 }
 /*===FORM===*/
+form {
+  margin-top: 20px;
+  display: flex;
+}
 
+input {
+  border: 1px solid var(--ligthGray);
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  flex: 0.7;
+  margin-right: 15px;
+}
 
+input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 0.8rem;
+}
 
-
-
+button {
+  border: none;
+  color: #fff;
+  background-color: var(--BrightBlue);
+  border-radius: 3px;
+  padding: 15px 30px;
+  font-weight: 700;
+  font-size: 13px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  flex: 0.3;
+}
 
 
 
