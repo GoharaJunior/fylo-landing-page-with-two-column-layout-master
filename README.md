@@ -11,6 +11,8 @@
     Frontend Mentor - Fylo landing page</br>with two column layout
 </h1>
 
+![Design preview for the Fylo landing page with two column layout challenge](./design/desktop-preview.jpg)
+
 Thanks for checking out this front-end coding challenge.</br>
 (Obrigado por verificar este desafio de codificação front-end.)
 
