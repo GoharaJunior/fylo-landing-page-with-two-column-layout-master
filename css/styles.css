@@ -145,9 +145,84 @@ button {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   flex: 0.3;
 }
+/*===LIGHT-BLUE===*/
+.light-blue {
+  background-color: var(--lightGrayishBlue);
+  margin-top: 100px;
+  position: relative;
+}
 
+.light-blue::before {
+  content: '';
+  background-image: url(/images/bg-curve-desktop.svg);
+  background-size: cover;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  top: -60px;
+  left: 0px;
+}
 
+.text-green {
+  color: var(--moderateCyan);
+  text-decoration: underline;
+}
 
+/*===TESTIMONY===*/
+.testimony {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  width: 70%;
+}
+
+.testimony p {
+  letter-spacing: 0.6px;
+  font-size: 0.8rem;
+  margin-bottom: 12.8px;
+  line-height: 1.4rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info h4 {
+  margin: 0;
+}
+/*===BLUEISH SECTION===*/
+.blueish {
+  background-color: var(--desaturatedBlue);
+  color: #fff;
+  padding: 20px 0;
+}
+
+.blueish h2 {
+  margin-bottom: 20px;
+}
+
+.blueish form {
+  flex-direction: column;
+}
+
+.blueish form input {
+  flex: 1;
+}
+
+.blueish form button {
+  width: 200px;
+  margin-top: 15px;
+}
 
 
 
