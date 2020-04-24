@@ -87,11 +87,13 @@ h1 {
   font-weight: 700;
   font-size: 2.1rem;
   line-height: 2.5rem;
+  margin-bottom: 20px;
 }
 
 h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.9rem;
+  margin-bottom: 20px;
 }
 
 /*===NAV===*/
@@ -163,6 +165,10 @@ button {
   left: 0px;
 }
 
+.light-blue p {
+  margin: 16px 0;
+}
+
 .text-green {
   color: var(--moderateCyan);
   text-decoration: underline;
@@ -223,57 +229,136 @@ button {
   width: 200px;
   margin-top: 15px;
 }
+/*===FOOTER===*/
+footer {
+  background-color: var(--darkBlue);
+  color: #fff;
+  padding: 20px 0;
+}
 
+footer .container {
+  padding-bottom: 15px;
+}
 
+footer ul {
+  list-style: none;
+  margin-top: 20px;
+}
 
+footer ul li {
+  margin-bottom: 20px;
+}
 
+footer ul li a {
+  color: #fff;
+}
 
+span {
+  color: #fff;
+  margin-left: 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  color: #fff;
+}
 
 /*===Atribuição===*/
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: var(--BrightBlue)
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+  .flex {
+    flex-direction: column;
+  }
+
+  /* Para obter a entrada e o botão do formulário, expanda a largura tota */
+  .flex > div {
+    width: 100%;
+  }
+
+  .flex > div:first-child {
+    margin-right: 0;
+  }
+
+  .flex > div:first-child {
+    margin-left: 0;
+  }
+  
+  .mobile-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .testimony {
+    width: 100%;
+  }
+
+  .attribution {
+    text-align: center;
+  }
+
+  .blueish input {
+    margin-right: 0;
+  }
+
+  .blueish form button {
+    width: 100%;
+  }
+  
+  footer ul {
+    width: 100%;
+  }
+
+  .social-media {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .logo-white {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media screen and (max-width: 501px) {
+  .logo {
+    max-width: 30%;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  nav ul {
+    padding-left: 0;
+  }
+
+  .light-blue::before {
+    background-image: url(/images/bg-curve-mobile.svg);
+  }
+
+  .mobile-reverse {
+    flex-direction: column-reverse;
+  }
+
+  footer .container {
+    padding-left: 30px;
+    text-align: center;
+  }
+}
